@@ -1,6 +1,6 @@
 # CI-CD-Document
 
-# Deploy React Application with CI/CD and GitHub Pages
+# Deploy Application with CI/CD and GitHub Pages
 
 Follow the steps below to set up CI/CD for deploying your React application to GitHub Pages:
 
