@@ -50,7 +50,7 @@ Navigate to **Settings > Actions > General** in your GitHub repository. Under **
 
 ## Step 5: Configure Node.js Actions in GitHub
 1. Go to the **Actions** tab in your repository.
-2. For react.js or next.js search for **Node.js** workflows and click **Configure**.
+2. For react.js or next.js, search for **Node.js** workflows and click **Configure**.
 
 > [!TIP]
 >   if you want to run other frameworks, choose your framework language like php, java, ...
@@ -115,7 +115,7 @@ jobs:
 ## Step 7: Make sure about GitHub Pages Configuration
 Navigate to **Settings > Pages** in your GitHub repository. Under **Build and deployment**,  **Source** should be **Deploy from branch** and  **Branch** should be **gh-pages**.
 
-Also you can visit you live site address there.
+Also you can visit your live site address there.
 
 ---
 
@@ -130,6 +130,7 @@ npm run deploy
 ---
 
 Your React application is now set up for deployment to GitHub Pages with CI/CD! :heart_eyes:
+
 Now after every push in specified branch all of your cammands in yml file will runs automatically. :+1:
 
 
