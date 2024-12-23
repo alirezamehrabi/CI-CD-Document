@@ -100,7 +100,7 @@ jobs:
 ```
 
 Replace `{GITHUB BRANCH}` with the name of the branch you want to use for CI/CD.
-when you push in your {GITHUB BRANCH} all commands will run automatically.
+when you push in your `{GITHUB BRANCH}` all commands will run automatically.
 
 ---
 
