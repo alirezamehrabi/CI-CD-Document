@@ -90,6 +90,8 @@ jobs:
       - name: Run tests
         run: npm test -- --watchAll=false    #  change with your test command
 
+      #  You can add your other commands here
+
       - name: Deploy with gh-pages
         if: github.ref == 'refs/heads/{GITHUB BRANCH}' # change {GITHUB BRANCH}  with your branch name
         run: |
