@@ -1,4 +1,4 @@
-# CI-CD-Document
+## CI-CD-Document
 
 # Deploy Application with CI/CD and GitHub Pages
 
