@@ -69,21 +69,25 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest]  # choose your os for running ci/cd
+        node-version: [20.x, 22.x]           # choose node.js version you want to run ci/cd
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
 
       - name: Install dependencies
         run: npm install --force
 
       - name: Build project
         run: npm run build
+
+      - name: Run tests
+        run: npm test -- --watchAll=false    #  change with your test command
 
       - name: Deploy with gh-pages
         if: github.ref == 'refs/heads/{GITHUB REPOSITORY}' # change {GITHUB REPOSITORY}  with your branch name
