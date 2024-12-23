@@ -19,7 +19,7 @@ Add the following lines to your `package.json`:
 
 - Set the `homepage` field:
   ```json
-  "homepage": "https://alirezamehrabi.github.io/reactcicd/"
+  "homepage": "https://{YOUR GITHUB ACCOUNT USERNAME}.github.io/{GITHUB REPOSITORY}/"
   ```
   Replace the URL with your GitHub Pages URL.
 
@@ -82,7 +82,7 @@ jobs:
         run: npm run build
 
       - name: Deploy with gh-pages
-        if: github.ref == 'refs/heads/testbranch' # testbranch is the branch name
+        if: github.ref == 'refs/heads/{GITHUB REPOSITORY}' # change {GITHUB REPOSITORY}  with your branch name
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
