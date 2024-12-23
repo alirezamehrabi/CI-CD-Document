@@ -106,7 +106,14 @@ when you push in your `{GITHUB BRANCH}` all commands will run automatically.
 
 ---
 
-## Step 7: Build and Deploy for the First Time
+## Step 7: Make sure about GitHub Pages Configuration
+Navigate to **Settings > Pages** in your GitHub repository. Under **Build and deployment**,  **Source** should be **Deploy from branch** and  **Branch** should be **gh-pages**.
+
+Also you can visit you live site address there
+
+---
+
+## Step 8: Build and Deploy for the First Time
 Run the following commands locally:
 
 ```bash
