@@ -37,8 +37,9 @@ If tou use react.js create a `_redirect` file in the `public` directory with the
 ```
 /*    /index.html   200
 ```
-This ensures proper routing for single-page applications (SPA).
-for next.js no need to do this
+
+This ensures proper routing for single-page applications (SPA). for next.js no need to do this.
+
 ---
 
 ## Step 4: Update GitHub Repository Settings
