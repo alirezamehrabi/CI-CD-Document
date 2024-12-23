@@ -50,7 +50,8 @@ Navigate to **Settings > Actions > General** in your GitHub repository. Under **
 
 ## Step 5: Configure Node.js Actions in GitHub
 1. Go to the **Actions** tab in your repository.
-2. For react.js or next.js search for **Node.js** workflows and click **Configure**.  if you want to run other frameworks, choose your framework language like php, java
+2. For react.js or next.js search for **Node.js** workflows and click **Configure**.
+<!-- COMMENT -->   if you want to run other frameworks, choose your framework language like php, java
 
 ---
 
