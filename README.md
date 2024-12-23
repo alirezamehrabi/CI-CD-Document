@@ -137,7 +137,7 @@ Now after every push in specified branch all of your cammands in yml file will r
 ## How to know CI/CD works properly?
 
 1. On GitHub go to your branch:
-   - If you see yellow dot $${\color{orange} .}$$, it means that CI/CD is running.
+   - If you see $${\color{orange} yellow dot}$$, it means that CI/CD is running.
    - If you see ❌, it means that CI/CD actions failed.
    - Otherwise, if you see ✅, it means that your CI/CD actions ran successfully.
 
