@@ -53,7 +53,7 @@ Navigate to **Settings > Actions > General** in your GitHub repository. Under **
 2. For react.js or next.js search for **Node.js** workflows and click **Configure**.
 
 > [!TIP]
->   if you want to run other frameworks, choose your framework language like php, java
+>   if you want to run other frameworks, choose your framework language like php, java, ...
 
 ---
 
@@ -115,7 +115,7 @@ jobs:
 ## Step 7: Make sure about GitHub Pages Configuration
 Navigate to **Settings > Pages** in your GitHub repository. Under **Build and deployment**,  **Source** should be **Deploy from branch** and  **Branch** should be **gh-pages**.
 
-Also you can visit you live site address there
+Also you can visit you live site address there.
 
 ---
 
