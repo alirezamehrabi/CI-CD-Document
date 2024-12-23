@@ -131,3 +131,10 @@ npm run deploy
 
 Your React application is now set up for deployment to GitHub Pages with CI/CD! :heart_eyes:
 Now after every push in specified branch all of your cammands in yml file will runs automatically. :+1:
+
+
+
+## How to know CI/CD works properly?
+
+1. On Github go to your branch, if you see yellow dot, it means that CI/CD is running, if you see red xmark it means that CI/CD actions failed, otherwise if you see green tick, it means that your CI/CD actions runned successfully
+2. On your Github account go to action tab and see CI/CD running proccess detail
