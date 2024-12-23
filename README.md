@@ -34,7 +34,7 @@ Add the following lines to your `package.json`:
 
 
 ## Step 3: Configure Redirects
-If tou use react.js create a `_redirect` file in the `public` directory with the following content:
+If you use react.js create a `_redirect` file in the `public` directory with the following content:
 ```
 /*    /index.html   200
 ```
@@ -91,7 +91,7 @@ jobs:
         run: npm test -- --watchAll=false    #  change with your test command
 
       - name: Deploy with gh-pages
-        if: github.ref == 'refs/heads/{GITHUB REPOSITORY}' # change {GITHUB REPOSITORY}  with your branch name
+        if: github.ref == 'refs/heads/{GITHUB BRANCH}' # change {GITHUB BRANCH}  with your branch name
         run: |
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
@@ -99,7 +99,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Replace `{GITHUB REPOSITORY}` with the name of the branch you want to use for CI/CD.
+Replace `{GITHUB BRANCH}` with the name of the branch you want to use for CI/CD.
+when you push in your {GITHUB BRANCH} all commands will run automatically.
 
 ---
 
