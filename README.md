@@ -32,6 +32,7 @@ Add the following lines to your `package.json`:
 
 ---
 
+
 ## Step 3: Configure Redirects
 If tou use react.js create a `_redirect` file in the `public` directory with the following content:
 ```
@@ -49,7 +50,7 @@ Navigate to **Settings > Actions > General** in your GitHub repository. Under **
 
 ## Step 5: Configure Node.js Actions in GitHub
 1. Go to the **Actions** tab in your repository.
-2. For react.js or next.js search for **Node.js** workflows and click **Configure**.  if you want to run other actions choose you framework language like php, java
+2. For react.js or next.js search for **Node.js** workflows and click **Configure**.  if you want to run other actions, choose your framework language like php, java
 
 ---
 
