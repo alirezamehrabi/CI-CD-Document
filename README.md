@@ -50,12 +50,12 @@ Navigate to **Settings > Actions > General** in your GitHub repository. Under **
 
 ## Step 5: Configure Node.js Actions in GitHub
 1. Go to the **Actions** tab in your repository.
-2. For react.js or next.js search for **Node.js** workflows and click **Configure**.  if you want to run other actions, choose your framework language like php, java
+2. For react.js or next.js search for **Node.js** workflows and click **Configure**.  if you want to run other frameworks, choose your framework language like php, java
 
 ---
 
 ## Step 6: Set Up CI/CD Workflow
-Edit file `.github/workflows/node.js.yml` - made in previous by configuring your action - and add the following configuration:
+Edit file `.github/workflows/node.js.yml` - made in previous step by configuring your action - and add the following configuration:
 
 ```yaml
 on:
