@@ -55,7 +55,7 @@ Navigate to **Settings > Actions > General** in your GitHub repository. Under **
 ---
 
 ## Step 6: Set Up CI/CD Workflow
-Create a new file `.github/workflows/node.js.yml` and add the following configuration:
+Edit file `.github/workflows/node.js.yml` - made in previous by configuring your action - and add the following configuration:
 
 ```yaml
 on:
