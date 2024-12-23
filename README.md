@@ -124,5 +124,5 @@ npm run deploy
 
 ---
 
-Your React application is now set up for deployment to GitHub Pages with CI/CD!
+Your React application is now set up for deployment to GitHub Pages with CI/CD! :+1:
 Now after every push in specified branch your cammands in yml file will runs automatically.
