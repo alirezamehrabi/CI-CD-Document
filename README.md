@@ -33,12 +33,12 @@ Add the following lines to your `package.json`:
 ---
 
 ## Step 3: Configure Redirects
-Create a `_redirect` file in the `public` directory with the following content:
+If tou use react.js create a `_redirect` file in the `public` directory with the following content:
 ```
 /*    /index.html   200
 ```
 This ensures proper routing for single-page applications (SPA).
-
+for next.js no need to do this
 ---
 
 ## Step 4: Update GitHub Repository Settings
@@ -64,7 +64,10 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]  # choose your os for running ci/cd
 
     steps:
       - name: Checkout code
@@ -76,7 +79,7 @@ jobs:
           node-version: '16'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --force
 
       - name: Build project
         run: npm run build
@@ -90,7 +93,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-Replace `testbranch` with the name of the branch you want to use for CI/CD.
+Replace `{GITHUB REPOSITORY}` with the name of the branch you want to use for CI/CD.
 
 ---
 
